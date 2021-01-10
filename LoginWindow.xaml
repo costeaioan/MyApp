@@ -1,0 +1,23 @@
+﻿<Window x:Class="MyApp.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MyApp"
+        mc:Ignorable="d"
+        Title="MyApp" Height="277.363" Width="458.228" Background="Beige">
+    <Border Background="Chocolate" CornerRadius="20" Margin="40,0,0,40" HorizontalAlignment="Left" Width="382" Height="170" VerticalAlignment="Bottom">
+        <Grid Margin="20,0,0,20" Height="130" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="342" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="34*"/>
+                <ColumnDefinition Width="137*"/>
+            </Grid.ColumnDefinitions>
+            <Label HorizontalAlignment="Left" Margin="50.619,54,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+            <Label x:Name="lblLogin" Content="Login" Margin="74.619,0,0,100" FontFamily="Verdana" FontSize="15" Height="30" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="51" Grid.Column="1"/>
+            <TextBox  x:Name="txtUsername"  HorizontalAlignment="Left" Height="23" Margin="39.619,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="1"  />
+            <PasswordBox x:Name="txtPassword"  HorizontalAlignment="Left" Height="23" Margin="39.619,64,0,0"  VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+            <Button x:Name="btnLogin" Content="Go" HorizontalAlignment="Left" Margin="59.619,100,0,0" VerticalAlignment="Top" Width="75" Background="Tomato" Click="btnLogin_Click" Grid.Column="1" />
+
+        </Grid>
+    </Border>
+</Window>
